@@ -40,7 +40,7 @@ The API includes three endpoints:
 - Open http://127.0.0.1:8000/docs in your browser
 - Select an endpoint, click "Try it out", and then "Execute"
 
-## What I Learned
+## What I Learned:
 This project helped me develop my software engineering skills and understand how to approach unfamiliar technical challenges. I started by researching different technologies and learning how APIs work before choosing Python and FastAPI.
 
 
