@@ -3,44 +3,45 @@
 This project is python based application that gets and analyses tick sighting data from 
 an Elanco API.
 
-It allows users to search tick sighting by UK city and species,view results in a table format, calculate statistics, and export filtered records to CSV file.
+The aim is to get and process tick sighting data from Elanco's API and provide a simple way to search and analyse the information.
 
 ## Features 
-- Get tick sighting data using an HTTP GET  request
-- Filter records by city and tick species
-- Display matching records in a formatted table
-- Calculate species percentages
-- Calculate the total number of sighting for each species
-- Verify matching records 
+- Search tick sightings by city, species and date range
+- View the total number of sightings and statistics for each species
+- View the number of tick sightings recorded in each city
+- Generate weekly and monthly reports to understand trends over time
 - Handle connection errors, timeouts, and invalid responses
-- Export filtered data to a CSV file for use in Excel
-- Display a meessage when no matching records are found
 
 ## Technologies
 - Python
-- Requested library
-- CSV module
-- JSON  data
-- REST API
+- Requests library
+- FastAPI
+- Datetime
+- Counter
+- lru cache
+- Uvicorn
 - Visual Studio Code
 
-## API Endpoint
+## API source
 https://dev-task.elancoapps.com/data/tick-sightings
+## API Endpoints
+http://127.0.0.1:8000/docs
+The API includes three endpoints:
+- GET /sightings: Search sightings by city, species and date range
+- GET /cities: View the number of sightings in each city
+- GET /weekly-monthly-report: View weekly and monthly trends
 
 
 ## How to run
 - Install Python
 - Download the project files
 - Open the project folder in Visual Studio Code 
-- Run python main.py
-- Enter a UK city
-- Enter a tick species or press Enter to view all species
-- Review the results and choose whether to export them to CSV
+- Run python api.py
+- Open http://127.0.0.1:8000/docs in your browser
+- Select an endpoint, click "Try it out", and then "Execute"
 
-## Future Improvements 
-- Add date range filtering
-- Add automated tests
-- Develop a web interface
+## What I Learned
+This project helped me develop my software engineering skills and understand how to approach unfamiliar technical challenges. I started by researching different technologies and learning how APIs work before choosing Python and FastAPI.
 
 
 
