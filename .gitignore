@@ -1,17 +1,18 @@
+
 # Python temporary files
 __pycache__/
 *.pyc
 
-# Virtual environments
-venv/
+# Python virtual environments
 .venv/
+venv/
 
-# Environment variables and secrets
+# Environment variables
 .env
 .env.*
 
-# VS Code local settings
-.vscode/
+# Python testing files
+.pytest_cache/
 
-# Generated CSV files
-tick_sightings.csv
+# VS Code settings
+.vscode/
